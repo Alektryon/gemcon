@@ -77,6 +77,14 @@ class cipher {
 				this.vArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19, 19, 20, 21, 22]
 				this.vArr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19, 19, 20, 21, 22]
 				break;
+			case "Eliz360":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122]
+				this.cArr2 = [65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90]
+				this.vArr = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
+				this.vArr2 = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
+                }
+				break;
 			case "Hebrew G":
 				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
 				for (y = 0; y < 22; y++) {
@@ -1059,6 +1067,7 @@ function Build_Ciphers() {
 			case "Elizabethan R Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 88, 125, 254, "Reverse", "BaconShortRev"); break;
 			case "Kaye Cipher": allCiphers[allCiphers.length] = new cipher(key, "English", 220, 93, 73, "BaconKaye"); break;
 			case "Modern Kaye": allCiphers[allCiphers.length] = new cipher(key, "English", 230, 153, 163, "ModernKaye"); break;
+			case "Elizabethan 360": allCiphers[allCiphers.length] = new cipher(key, "Eliz360", 251, 172, 0); break;
 
 			case "Illuminati Novice": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 255, 29, "IlluminatiNovice"); break;
 			case "Illuminati Reverse": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 189, 2, "Reverse", "IlluminatiReverse"); break;
@@ -1162,7 +1171,7 @@ function Build_Ciphers() {
 }
 
 function Set_Categories() {
-	catArr = ["English", "Reverse", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Cypher Keys", "Mathematical", "Fibonacci", "Other", "Foreign", "Russian", "Custom"]
+	catArr = ["English", "Reverse", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Other", "Foreign", "Russian", "Custom"]
 
 	cipherArray["English Ordinal"] = "English"
 	cipherArray["Full Reduction"] = "English"
@@ -1252,6 +1261,12 @@ function Set_Categories() {
 	cipherArray["Pentagonal Numbers"] = "Mathematical"
 	cipherArray["Reverse Pentagonal Numbers"] = "Mathematical"
 
+	cipherArray["Elizabethan 360"] = "Divisors"
+	cipherArray["Hebrew 360"] = "Divisors"
+	cipherArray["Hebrew 900"] = "Divisors"
+	cipherArray["Greek 360"] = "Divisors"
+	cipherArray["Greek 900"] = "Divisors"
+
 	cipherArray["Fibonacci Cipher"] = "Fibonacci"
 	cipherArray["Fibonacci Sequence"] = "Fibonacci"
 	
@@ -1265,15 +1280,11 @@ function Set_Categories() {
 	cipherArray["Hebrew Ordinal"] = "Foreign"
 	cipherArray["Hebrew Reduction"] = "Foreign"
 	cipherArray["Hebrew Soffit"] = "Foreign"
-	cipherArray["Hebrew 360"] = "Foreign"
-	cipherArray["Hebrew 900"] = "Foreign"
 
 	cipherArray["Greek Isopsephy"] = "Foreign"
 	cipherArray["Greek Ordinal"] = "Foreign"
 	cipherArray["Greek Reduction"] = "Foreign"
 	cipherArray["Greek Ordinal 24"] = "Foreign"
-	cipherArray["Greek 360"] = "Foreign"
-	cipherArray["Greek 900"] = "Foreign"
 	
 	cipherArray["Arabic"] = "Foreign"
 	cipherArray["Arabic Ordinal"] = "Foreign"
