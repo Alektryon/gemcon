@@ -88,6 +88,14 @@ class cipher {
 				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
 				Build_GemVals(this)
 				break;
+			case "Hebrew360":
+				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1498, 1500, 1502, 1501, 1504, 1503, 1505, 1506, 1508, 1507, 1510, 1509, 1511, 1512, 1513, 1514]
+				this.vArr = [3,4,5,6,8,9,10,12,15,18,20,20,24,30,30,36,36,40,45,60,60,72,72,90,120,180,360]
+				break;
+			case "Hebrew900":
+				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
+				this.vArr = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
+				break;
 			case "Greek":
 				this.cArr = [913, 914, 915, 916, 917, 988, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 984, 929, 931, 932, 933, 934, 935, 936, 937, 993]
 				this.cArr2 = [945, 946, 947, 948, 949, 989, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 985, 961, 963, 964, 965, 966, 967, 968, 969, 993]
@@ -101,6 +109,18 @@ class cipher {
 				this.cArr3 = [940, 941, 942, 943, 962, 972, 973, 974, 986, 987, 902, 904, 905, 906, 908, 910, 911, 7952, 8000, 8150, 8058, 8166]
 				this.vArr3 = [1, 5, 8, 10, 18, 16, 22, 26, 6, 6, 1, 5, 7, 10, 16, 22, 26, 5, 16, 9, 22, 22]
 				Build_GemVals(this)
+				break;
+			case "Greek900":
+				this.cArr = [913, 914, 915, 916, 917, 988, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 984, 929, 931, 932, 933, 934, 935, 936, 937, 993]
+				this.cArr2 = [945, 946, 947, 948, 949, 989, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 985, 961, 963, 964, 965, 966, 967, 968, 969, 993]
+				this.vArr = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
+				this.vArr2 = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
+				break;
+			case "Greek360":
+				this.cArr = [913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 931, 932, 933, 934, 935, 936, 937]
+				this.cArr2 = [945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 963, 964, 965, 966, 967, 968, 969]
+				this.vArr = [1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360]
+				this.vArr2 = [1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360]
 				break;
 			case "Arabic":
 				for (y = 0; y < 42; y++) {
@@ -1111,14 +1131,19 @@ function Build_Ciphers() {
 			case "Hebrew Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Hebrew G", 255, 209, 36); break;
 			case "Hebrew Gematria": allCiphers[allCiphers.length] = new cipher(key, "Hebrew G", 255, 227, 93, "Extend"); break;
 			case "Hebrew Soffit": allCiphers[allCiphers.length] = new cipher(key, "Hebrew Soffit", 255, 251, 156, "Extend"); break;
+			case "Hebrew 360": allCiphers[allCiphers.length] = new cipher(key, "Hebrew360", 217, 155, 104); break;
+			case "Hebrew 900": allCiphers[allCiphers.length] = new cipher(key, "Hebrew900", 213, 157, 129); break;
+
+			case "Greek Isopsephy": allCiphers[allCiphers.length] = new cipher(key, "Greek", 139, 200, 163, "Extend"); break;
+			case "Greek Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Greek", 149, 199, 139); break;
+			case "Greek Reduction": allCiphers[allCiphers.length] = new cipher(key, "Greek", 156, 201, 171, "FullReduction"); break;
+			case "Greek Ordinal 24": allCiphers[allCiphers.length] = new cipher(key, "Greek24", 200, 200, 40); break;                
+			case "Greek 900": allCiphers[allCiphers.length] = new cipher(key, "Greek900", 119, 187, 202); break;
+			case "Greek 360": allCiphers[allCiphers.length] = new cipher(key, "Greek360", 80, 154, 218); break;
+
 			case "Arabic": allCiphers[allCiphers.length] = new cipher(key, "Arabic", 255, 180, 180); break;			
 			case "Arabic Ordinal": allCiphers[allCiphers.length] = new cipher(key, "ArabicOrd", 240, 200, 195); break;
-			case "Arabic Reduction": allCiphers[allCiphers.length] = new cipher(key, "ArabicRed", 235, 200, 200); break;
-  
-			case "Greek Reduction": allCiphers[allCiphers.length] = new cipher(key, "Greek", 156, 201, 171, "FullReduction"); break;
-			case "Greek Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Greek", 149, 199, 139); break;
-			case "Greek Isopsephy": allCiphers[allCiphers.length] = new cipher(key, "Greek", 139, 200, 163, "Extend"); break;
-			case "Greek Ordinal 24": allCiphers[allCiphers.length] = new cipher(key, "Greek24", 200, 200, 40); break;                
+			case "Arabic Reduction": allCiphers[allCiphers.length] = new cipher(key, "ArabicRed", 235, 200, 200); break;  
 
 			case "RU Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Russian", 0, 186, 0); break;
 			case "RU Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "Russian", 88, 125, 254, "FullReduction"); break;
@@ -1240,11 +1265,15 @@ function Set_Categories() {
 	cipherArray["Hebrew Ordinal"] = "Foreign"
 	cipherArray["Hebrew Reduction"] = "Foreign"
 	cipherArray["Hebrew Soffit"] = "Foreign"
+	cipherArray["Hebrew 360"] = "Foreign"
+	cipherArray["Hebrew 900"] = "Foreign"
 
 	cipherArray["Greek Isopsephy"] = "Foreign"
 	cipherArray["Greek Ordinal"] = "Foreign"
 	cipherArray["Greek Reduction"] = "Foreign"
 	cipherArray["Greek Ordinal 24"] = "Foreign"
+	cipherArray["Greek 360"] = "Foreign"
+	cipherArray["Greek 900"] = "Foreign"
 	
 	cipherArray["Arabic"] = "Foreign"
 	cipherArray["Arabic Ordinal"] = "Foreign"
