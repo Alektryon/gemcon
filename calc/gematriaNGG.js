@@ -40,18 +40,26 @@ class cipher {
 				}
 				Build_GemVals(this)
 				break;
+			case "ExtendAlt":
+				for (y = 0; y < 26; y++) {
+					this.cArr[y] = (y + 97)
+					this.cArr2[y] = (y + 65)
+				}
+				this.vArr = [1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170]
+				this.vArr2 = [1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170]
+				break;
 			case "Agrippa":
 				this.cArr = [97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 120, 121, 122, 106, 118, 10680, 119]
 				this.cArr2 = [65, 66, 67, 68, 69, 70, 71, 72, 73, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 88, 89, 90, 74, 86, 10680, 87]
 				Build_GemVals(this)
 				break;
-			case "Aequicalculus":
+			case "Simplex":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
 					this.cArr2[y] = (y + 65)
 				}
-				this.vArr = [1, 2, 3, 4, 5, 6, 3, 8, 10, 10, 20, 30, 40, 50, 70, 80, 90, 100, 200, 300, 400, 400, 400, 600, 400, 7]
-				this.vArr2 = [1, 2, 3, 4, 5, 6, 3, 8, 10, 10, 20, 30, 40, 50, 70, 80, 90, 100, 200, 300, 400, 400, 400, 600, 400, 7]
+				this.vArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19, 19, 20, 21, 22]
+				this.vArr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19, 19, 20, 21, 22]
 				break;
 			case "RomanNum":
 				for (y = 0; y < 26; y++) {
@@ -69,13 +77,13 @@ class cipher {
 				this.vArr = [500, 300, 100, 500, 250, 40, 400, 200, 1, 1, 51, 50, 1000, 90, 11, 400, 500, 80, 70, 160, 5, 5, 10, 10, 150, 2000]
 				this.vArr2 = [500, 300, 100, 500, 250, 40, 400, 200, 1, 1, 51, 50, 1000, 90, 11, 400, 500, 80, 70, 160, 5, 5, 10, 10, 150, 2000]
 				break;
-			case "Simplex":
+			case "Aequicalculus":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
 					this.cArr2[y] = (y + 65)
 				}
-				this.vArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19, 19, 20, 21, 22]
-				this.vArr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19, 19, 20, 21, 22]
+				this.vArr = [1, 2, 3, 4, 5, 6, 3, 8, 10, 10, 20, 30, 40, 50, 70, 80, 90, 100, 200, 300, 400, 400, 400, 600, 400, 7]
+				this.vArr2 = [1, 2, 3, 4, 5, 6, 3, 8, 10, 10, 20, 30, 40, 50, 70, 80, 90, 100, 200, 300, 400, 400, 400, 600, 400, 7]
 				break;
 			case "Eliz360":
 				for (y = 0; y < 26; y++) {
@@ -84,87 +92,6 @@ class cipher {
 				this.vArr = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
 				this.vArr2 = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
                 }
-				break;
-			case "Hebrew G":
-				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
-				for (y = 0; y < 22; y++) {
-					this.vArr.push(y + 1)
-				}
-				this.vArr[22] = 11; this.vArr[23] = 13; this.vArr[24] = 14; this.vArr[25] = 17; this.vArr[26] = 18
-				break;
-			case "Hebrew Soffit":
-				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
-				Build_GemVals(this)
-				break;
-			case "Hebrew360":
-				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1498, 1500, 1502, 1501, 1504, 1503, 1505, 1506, 1508, 1507, 1510, 1509, 1511, 1512, 1513, 1514]
-				this.vArr = [3,4,5,6,8,9,10,12,15,18,20,20,24,30,30,36,36,40,45,60,60,72,72,90,120,180,360]
-				break;
-			case "Hebrew900":
-				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
-				this.vArr = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
-				break;
-			case "Greek":
-				this.cArr = [913, 914, 915, 916, 917, 988, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 984, 929, 931, 932, 933, 934, 935, 936, 937, 993]
-				this.cArr2 = [945, 946, 947, 948, 949, 989, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 985, 961, 963, 964, 965, 966, 967, 968, 969, 993]
-				this.cArr3 = [940, 941, 942, 943, 962, 972, 973, 974, 986, 987, 902, 904, 905, 906, 908, 910, 911, 7952, 8000, 8150, 8058, 8166]
-				this.vArr3 = [1, 5, 8, 10, 20, 16, 22, 26, 6, 6, 1, 5, 7, 10, 16, 22, 26, 5, 16, 9, 22, 22]
-				Build_GemVals(this)
-				break;
-			case "Greek24":
-				this.cArr = [913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 931, 932, 933, 934, 935, 936, 937]
-				this.cArr2 = [945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 963, 964, 965, 966, 967, 968, 969]
-				this.cArr3 = [940, 941, 942, 943, 962, 972, 973, 974, 986, 987, 902, 904, 905, 906, 908, 910, 911, 7952, 8000, 8150, 8058, 8166]
-				this.vArr3 = [1, 5, 8, 10, 18, 16, 22, 26, 6, 6, 1, 5, 7, 10, 16, 22, 26, 5, 16, 9, 22, 22]
-				Build_GemVals(this)
-				break;
-			case "Greek900":
-				this.cArr = [913, 914, 915, 916, 917, 988, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 984, 929, 931, 932, 933, 934, 935, 936, 937, 993]
-				this.cArr2 = [945, 946, 947, 948, 949, 989, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 985, 961, 963, 964, 965, 966, 967, 968, 969, 993]
-				this.vArr = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
-				this.vArr2 = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
-				break;
-			case "Greek360":
-				this.cArr = [913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 931, 932, 933, 934, 935, 936, 937]
-				this.cArr2 = [945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 963, 964, 965, 966, 967, 968, 969]
-				this.vArr = [1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360]
-				this.vArr2 = [1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360]
-				break;
-			case "Arabic":
-				for (y = 0; y < 42; y++) {
-				this.cArr = [1575,1649,1650,1651,1653,1576,1580,1583,1607,1577,1608,1586,1581,1591,1610,1609,1603,1604,1605,1606,1587,1593,1601,1589,1602,1585,1588,1578,1579,1582,1584,1590,1592,1594]
-				this.vArr = [1,1,1,1,1,2,3,4,5,5,6,7,8,9,10,10,20,30,40,50,60,70,80,90,100,200,300,400,500,600,700,800,900,1000]
-				}
-				break;
-			case "ArabicOrd":
-				for (y = 0; y < 42; y++) {
-				this.cArr = [1575,1649,1650,1651,1653,1576,1580,1583,1607,1577,1608,1586,1581,1591,1610,1609,1603,1604,1605,1606,1587,1593,1601,1589,1602,1585,1588,1578,1579,1582,1584,1590,1592,1594]
-				this.vArr = [1,1,1,1,1,2,3,4,5,5,6,7,8,9,10,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
-				}
-				break;
-			case "ArabicRed":
-				for (y = 0; y < 42; y++) {
-				this.cArr = [1575,1649,1650,1651,1653,1576,1580,1583,1607,1577,1608,1586,1581,1591,1610,1609,1603,1604,1605,1606,1587,1593,1601,1589,1602,1585,1588,1578,1579,1582,1584,1590,1592,1594]
-				this.vArr = [1,1,1,1,1,2,3,4,5,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1]
-				}
-				break;
-			case "Russian":
-				this.cArr = [1072,1073,1074,1075,1076,1077,1105,1078,1079,1080,1081,1082,1083,1084,1085,1086,1087,1088,1089,1090,1091,1092,1093,1094,1095,1096,1097,1098,1099,1100,1101,1102,1103]
-				this.cArr2 = [1040,1041,1042,1043,1044,1045,1025,1046,1047,1048,1049,1050,1051,1052,1053,1054,1055,1056,1057,1058,1059,1060,1061,1062,1063,1064,1065,1066,1067,1068,1069,1070,1071] // caps
-				Build_GemVals(this)
-				break;
-			case "OCSlavonic":
-				this.cArr = [1072,1074,1075,1076,1077,1109,1079,1080,1139,1110,1082,1083,1084,1085,1135,1086,1087,1095,1088,1089,1090,1145,1092,1093,1137,1121,1094]
-				this.cArr2 = [1040,1042,1043,1044,1045,1029,1047,1048,1138,1030,1050,1051,1052,1053,1134,1054,1055,1063,1056,1057,1058,1144,1060,1061,1136,1120,1062] // caps
-				Build_GemVals(this)
-				break;
-			case "Glagolitic":
-				for (y = 0; y < 42; y++) {
-				this.cArr = [1072,1073,1074,1075,1169,1076,1077,1108,1101,1078,1109,1079,1110,1080,1115,1106,1082,1083,1113,1084,1085,1114,1086,1087,1088,1089,1090,1091,1092,1093,1121,1097,1094,1095,1119,1096,1098,1099,1100,1123,1103,1102]
-				this.cArr2 = [1040,1041,1042,1043,1168,1044,1045,1028,1069,1046,1029,1047,1030,1048,1035,1026,1050,1051,1033,1052,1053,1034,1054,1055,1056,1057,1058,1059,1060,1061,1120,1065,1062,1063,1039,1064,1066,1067,1068,1122,1071,1070]
-				this.vArr = [1,2,3,4,4,5,6,6,6,7,8,9,10,20,30,30,40,50,50,60,70,70,80,90,100,200,300,400,500,600,700,800,900,1000,1000,2000,3000,3000,3000,4000,4000,5000]
-				this.vArr2 = [1,2,3,4,4,5,6,6,6,7,8,9,10,20,30,30,40,50,50,60,70,70,80,90,100,200,300,400,500,600,700,800,900,1000,1000,2000,3000,3000,3000,4000,4000,5000]
-				}
 				break;
 			case "Chald":
 				for (y = 0; y < 26; y++) {
@@ -421,10 +348,90 @@ class cipher {
 				this.vArr2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]
                 }
 				break;
+			case "Hebrew G":
+				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
+				for (y = 0; y < 22; y++) {
+					this.vArr.push(y + 1)
+				}
+				this.vArr[22] = 11; this.vArr[23] = 13; this.vArr[24] = 14; this.vArr[25] = 17; this.vArr[26] = 18
+				break;
+			case "Hebrew Soffit":
+				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
+				Build_GemVals(this)
+				break;
+			case "Hebrew360":
+				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1498, 1500, 1502, 1501, 1504, 1503, 1505, 1506, 1508, 1507, 1510, 1509, 1511, 1512, 1513, 1514]
+				this.vArr = [3,4,5,6,8,9,10,12,15,18,20,20,24,30,30,36,36,40,45,60,60,72,72,90,120,180,360]
+				break;
+			case "Hebrew900":
+				this.cArr = [1488, 1489, 1490, 1491, 1492, 1493, 1494, 1495, 1496, 1497, 1499, 1500, 1502, 1504, 1505, 1506, 1508, 1510, 1511, 1512, 1513, 1514, 1498, 1501, 1503, 1507, 1509]
+				this.vArr = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
+				break;
+			case "Greek":
+				this.cArr = [913, 914, 915, 916, 917, 988, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 984, 929, 931, 932, 933, 934, 935, 936, 937, 993]
+				this.cArr2 = [945, 946, 947, 948, 949, 989, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 985, 961, 963, 964, 965, 966, 967, 968, 969, 993]
+				this.cArr3 = [940, 941, 942, 943, 962, 972, 973, 974, 986, 987, 902, 904, 905, 906, 908, 910, 911, 7952, 8000, 8150, 8058, 8166]
+				this.vArr3 = [1, 5, 8, 10, 20, 16, 22, 26, 6, 6, 1, 5, 7, 10, 16, 22, 26, 5, 16, 9, 22, 22]
+				Build_GemVals(this)
+				break;
+			case "Greek24":
+				this.cArr = [913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 931, 932, 933, 934, 935, 936, 937]
+				this.cArr2 = [945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 963, 964, 965, 966, 967, 968, 969]
+				this.cArr3 = [940, 941, 942, 943, 962, 972, 973, 974, 986, 987, 902, 904, 905, 906, 908, 910, 911, 7952, 8000, 8150, 8058, 8166]
+				this.vArr3 = [1, 5, 8, 10, 18, 16, 22, 26, 6, 6, 1, 5, 7, 10, 16, 22, 26, 5, 16, 9, 22, 22]
+				Build_GemVals(this)
+				break;
+			case "Greek900":
+				this.cArr = [913, 914, 915, 916, 917, 988, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 984, 929, 931, 932, 933, 934, 935, 936, 937, 993]
+				this.cArr2 = [945, 946, 947, 948, 949, 989, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 985, 961, 963, 964, 965, 966, 967, 968, 969, 993]
+				this.vArr = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
+				this.vArr2 = [1,2,3,4,5,6,9,10,12,15,18,20,25,30,36,45,50,60,75,90,100,150,180,225,300,450,900]
+				break;
+			case "Greek360":
+				this.cArr = [913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 931, 932, 933, 934, 935, 936, 937]
+				this.cArr2 = [945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 963, 964, 965, 966, 967, 968, 969]
+				this.vArr = [1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360]
+				this.vArr2 = [1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360]
+				break;
+			case "Arabic":
+				for (y = 0; y < 42; y++) {
+				this.cArr = [1575,1649,1650,1651,1653,1576,1580,1583,1607,1577,1608,1586,1581,1591,1610,1609,1603,1604,1605,1606,1587,1593,1601,1589,1602,1585,1588,1578,1579,1582,1584,1590,1592,1594]
+				this.vArr = [1,1,1,1,1,2,3,4,5,5,6,7,8,9,10,10,20,30,40,50,60,70,80,90,100,200,300,400,500,600,700,800,900,1000]
+				}
+				break;
+			case "ArabicOrd":
+				for (y = 0; y < 42; y++) {
+				this.cArr = [1575,1649,1650,1651,1653,1576,1580,1583,1607,1577,1608,1586,1581,1591,1610,1609,1603,1604,1605,1606,1587,1593,1601,1589,1602,1585,1588,1578,1579,1582,1584,1590,1592,1594]
+				this.vArr = [1,1,1,1,1,2,3,4,5,5,6,7,8,9,10,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
+				}
+				break;
+			case "ArabicRed":
+				for (y = 0; y < 42; y++) {
+				this.cArr = [1575,1649,1650,1651,1653,1576,1580,1583,1607,1577,1608,1586,1581,1591,1610,1609,1603,1604,1605,1606,1587,1593,1601,1589,1602,1585,1588,1578,1579,1582,1584,1590,1592,1594]
+				this.vArr = [1,1,1,1,1,2,3,4,5,5,6,7,8,9,1,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1]
+				}
+				break;
+			case "Russian":
+				this.cArr = [1072,1073,1074,1075,1076,1077,1105,1078,1079,1080,1081,1082,1083,1084,1085,1086,1087,1088,1089,1090,1091,1092,1093,1094,1095,1096,1097,1098,1099,1100,1101,1102,1103]
+				this.cArr2 = [1040,1041,1042,1043,1044,1045,1025,1046,1047,1048,1049,1050,1051,1052,1053,1054,1055,1056,1057,1058,1059,1060,1061,1062,1063,1064,1065,1066,1067,1068,1069,1070,1071] // caps
+				Build_GemVals(this)
+				break;
+			case "OCSlavonic":
+				this.cArr = [1072,1074,1075,1076,1077,1109,1079,1080,1139,1110,1082,1083,1084,1085,1135,1086,1087,1095,1088,1089,1090,1145,1092,1093,1137,1121,1094]
+				this.cArr2 = [1040,1042,1043,1044,1045,1029,1047,1048,1138,1030,1050,1051,1052,1053,1134,1054,1055,1063,1056,1057,1058,1144,1060,1061,1136,1120,1062] // caps
+				Build_GemVals(this)
+				break;
+			case "Glagolitic":
+				for (y = 0; y < 42; y++) {
+				this.cArr = [1072,1073,1074,1075,1169,1076,1077,1108,1101,1078,1109,1079,1110,1080,1115,1106,1082,1083,1113,1084,1085,1114,1086,1087,1088,1089,1090,1091,1092,1093,1121,1097,1094,1095,1119,1096,1098,1099,1100,1123,1103,1102]
+				this.cArr2 = [1040,1041,1042,1043,1168,1044,1045,1028,1069,1046,1029,1047,1030,1048,1035,1026,1050,1051,1033,1052,1053,1034,1054,1055,1056,1057,1058,1059,1060,1061,1120,1065,1062,1063,1039,1064,1066,1067,1068,1122,1071,1070]
+				this.vArr = [1,2,3,4,4,5,6,6,6,7,8,9,10,20,30,30,40,50,50,60,70,70,80,90,100,200,300,400,500,600,700,800,900,1000,1000,2000,3000,3000,3000,4000,4000,5000]
+				this.vArr2 = [1,2,3,4,4,5,6,6,6,7,8,9,10,20,30,30,40,50,50,60,70,70,80,90,100,200,300,400,500,600,700,800,900,1000,1000,2000,3000,3000,3000,4000,4000,5000]
+				}
+				break;
 	
 		}
 
-		if (impMods.indexOf("Exception") > -1) {this.Exception = true}
 		if (impMods.indexOf("Reverse") > -1) {this.Reverse_Order()}
 		if (impMods.indexOf("SeptenaryNum") > -1) {this.Make_Septenary()}
 		if (impMods.indexOf("ALW") > -1) {this.Make_ALW()}
@@ -434,15 +441,12 @@ class cipher {
 		if (impMods.indexOf("CSSwitchCase") > -1) {this.Make_CSSwitchCase()}
 		if (impMods.indexOf("AltCS") > -1) {this.Make_AltCS()}
 		if (impMods.indexOf("AltCSSwitchCase") > -1) {this.Make_AltCSSwitchCase()}
-		if (impMods.indexOf("SatanicNum") > -1) {this.Make_Satanic()}
+		if (impMods.indexOf("Satanic") > -1) {this.Make_Satanic()}
 		if (impMods.indexOf("FullReduction") > -1) {this.Reduce_Full()}
-		if (impMods.indexOf("SingleReduction") > -1) {this.Reduce_Single()}
 		if (impMods.indexOf("Extend") > -1) {this.Extend()}
 		if (impMods.indexOf("PrimeNum") > -1) {this.Make_Primes()}
 		if (impMods.indexOf("TriangleNum") > -1) {this.Make_Trigonal()}
 		if (impMods.indexOf("SquareNum") > -1) {this.Make_Squares()}
-		if (impMods.indexOf("SumerianNum") > -1) {this.Make_Sumerian()}
-		if (impMods.indexOf("KeyNum") > -1) {this.Make_KeyAlt()}
 		if (impMods.indexOf("BaconSimple") > -1) {this.Make_BaconSimple()}
 		if (impMods.indexOf("BaconReverse") > -1) {this.Make_BaconReverse()}
 		if (impMods.indexOf("BaconShort") > -1) {this.Make_BaconShort()}
@@ -712,28 +716,6 @@ class cipher {
 		}
 	}
 
-	Reduce_Single() {
-		var x, tDig
-
-		for (x = 0; x < this.vArr.length; x++) {
-			tDig = this.vArr[x]
-			if (isReduced(tDig, this.Exception) === false) {
-				this.vArr[x] = ReducedNum(tDig, false, true)
-			}
-		}
-		for (x = 0; x < this.vArr2.length; x++) {
-			tDig = this.vArr2[x]
-			if (isReduced(tDig, this.Exception) === false) {
-				this.vArr2[x] = ReducedNum(tDig, false, true)
-			}
-		}
-		for (x = 0; x < this.vArr3.length; x++) {
-			tDig = this.vArr3[x]
-			if (isReduced(tDig, this.Exception) === false) {
-				this.vArr3[x] = ReducedNum(tDig, false, true)
-			}
-		}
-	}
 	Extend() {
 		var tDig, numZero, x
 		for (x = 0; x < this.vArr.length; x++) {
@@ -872,31 +854,11 @@ class cipher {
 			}
 		}
 	}
-	Make_Sumerian() {
-		var x
-		for (x = 0; x < this.vArr.length; x++) {
-			this.vArr[x] = this.vArr[x] * 6
-		}
-		if (this.vArr2.length > 0) {
-			for (x = 0; x < this.vArr2.length; x++) {
-				this.vArr2[x] = this.vArr2[x] * 6
-			}
-		}
-		if (this.vArr3.length > 0) {
-			for (x = 0; x < this.vArr3.length; x++) {
-				this.vArr3[x] = this.vArr3[x] * 6
-			}
-		}
-	}
 	Make_Septenary() {
 		this.vArr = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1]
 		if (this.vArr2.length > 0) {
 			this.vArr2 = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1]
 		}
-	}
-	Make_KeyAlt() {
-		this.vArr = [2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 0, 7, 7, 8, 8, 8, 9, 9, 9, 0]
-		this.vArr2 = [2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 0, 7, 7, 8, 8, 8, 9, 9, 9, 0]
 	}
 	Make_BaconSimple() {
 		this.vArr = [1,2,3,4,5,6,7,8,9,9,10,11,12,13,14,15,16,17,18,19,20,20,21,22,23,24]
@@ -1037,29 +999,14 @@ function Build_Ciphers() {
 
 	for (key in cipherArray) {
 		switch (key) {
-			case "Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 88, 125, 254, "FullReduction"); break;
-			case "Single Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 140, 171, 227, "SingleReduction"); break;
-			case "Full Reduction KV": allCiphers[allCiphers.length] = new cipher(key, "English", 97, 195, 244, "FullReduction", "Exception"); break;
-			case "Single Reduction KV": allCiphers[allCiphers.length] = new cipher(key, "English", 70, 175, 244, "SingleReduction", "Exception"); break;
 			case "English Ordinal": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0); break;
-			case "English Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Extend"); break;
-			case "Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "CS"); break;
-			case "Case Sensitive SwitchCase": allCiphers[allCiphers.length] = new cipher(key, "English", 152, 223, 98, "CSSwitchCase"); break;
-			case "Alternating Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "AltCS"); break;
-			case "Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 132, 203, 128, "AltCSSwitchCase"); break;	
-			case "Satanic Gematria": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 0, 0, "SatanicNum"); break;
-
-			case "Reverse Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 226, 226, "Reverse", "FullReduction"); break;
-			case "Reverse Single Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 216, 209, "Reverse", "SingleReduction"); break;
-			case "Reverse Full Reduction EP": allCiphers[allCiphers.length] = new cipher(key, "English", 101, 224, 194, "Reverse", "FullReduction", "Exception"); break;
-			case "Reverse Single Reduction EP": allCiphers[allCiphers.length] = new cipher(key, "English", 110, 226, 156, "Reverse", "SingleReduction", "Exception"); break;
 			case "Reverse Ordinal": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "Reverse"); break;
+			case "Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 88, 125, 254, "FullReduction"); break;
+			case "Reverse Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 226, 226, "Reverse", "FullReduction"); break;
+			case "English Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Extend"); break;
 			case "Reverse Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "Reverse", "Extend"); break;
-			case "Reverse Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "Reverse", "CS"); break;
-			case "R Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 152, 223, 98, "Reverse", "CSSwitchCase"); break;
-			case "R Alt Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "Reverse", "AltCS"); break;
-			case "R Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 132, 203, 128, "Reverse", "AltCSSwitchCase"); break;
-			case "Reverse Satanic": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 51, 51, "Reverse", "SatanicNum"); break;
+			case "Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 225, 186, 86); break;
+			case "R Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 234, 205, 134, "Reverse"); break;
 
 			case "Elizabethan Simple": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "BaconSimple"); break;
 			case "Elizabethan Reverse": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0, "Reverse", "BaconReverse"); break;
@@ -1092,7 +1039,6 @@ function Build_Ciphers() {
 			case "Alphanumeric Primes": allCiphers[allCiphers.length] = new cipher(key, "AQprimes", 115, 177, 196); break;   
 			case "Alphanumeric Trigonal": allCiphers[allCiphers.length] = new cipher(key, "AQtrigonal", 200, 81, 81); break;   
 			case "Alphanumeric Squares": allCiphers[allCiphers.length] = new cipher(key, "AQsquares", 111, 174, 116); break;   
-			case "Satanic Qabbala": allCiphers[allCiphers.length] = new cipher(key, "SatanAQ", 223,126,92); break;
 			case "Elizabethan Alphanumeric": allCiphers[allCiphers.length] = new cipher(key, "ElizAQ", 227, 176, 114); break;
 			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 126, 207, 241); break;
 
@@ -1108,16 +1054,29 @@ function Build_Ciphers() {
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
 			case "Master Builder": allCiphers[allCiphers.length] = new cipher(key, "Master Builder", 0,202,191); break;   
 		 	case "Masonic": allCiphers[allCiphers.length] = new cipher(key, "Masonic", 255,179,87); break;   
+			case "Satanic Gematria": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 0, 0, "Satanic"); break;
 			case "Foundation": allCiphers[allCiphers.length] = new cipher(key, "Foundation", 207,80,155); break;   
 
-			case "English Sumerian": allCiphers[allCiphers.length] = new cipher(key, "English", 169, 208, 142, "SumerianNum"); break;
-			case "Reverse Sumerian": allCiphers[allCiphers.length] = new cipher(key, "English", 220, 208, 148, "Reverse", "SumerianNum"); break;
+			case "Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "CS"); break;
+			case "Case Sensitive SwitchCase": allCiphers[allCiphers.length] = new cipher(key, "English", 152, 223, 98, "CSSwitchCase"); break;
+			case "Alternating Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "AltCS"); break;
+			case "Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 132, 203, 128, "AltCSSwitchCase"); break;	
+			case "Reverse Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "Reverse", "CS"); break;
+			case "R Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 152, 223, 98, "Reverse", "CSSwitchCase"); break;
+			case "R Alt Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "Reverse", "AltCS"); break;
+			case "R Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 132, 203, 128, "Reverse", "AltCSSwitchCase"); break;
+			case "Satanic Qabbala": allCiphers[allCiphers.length] = new cipher(key, "SatanAQ", 223,126,92); break;
+
 			case "Primes": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 204, 111, "PrimeNum"); break;
 			case "Trigonal": allCiphers[allCiphers.length] = new cipher(key, "English", 231, 180, 113, "TriangleNum"); break;
 			case "Squares": allCiphers[allCiphers.length] = new cipher(key, "English", 228, 216, 96, "SquareNum"); break;
+			case "Pentagonal": allCiphers[allCiphers.length] = new cipher(key, "Pentagonal", 215, 200, 100,); break;
 			case "Reverse Primes": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 209, 145, "Reverse", "PrimeNum"); break;
 			case "Reverse Trigonal": allCiphers[allCiphers.length] = new cipher(key, "English", 238, 191, 112, "Reverse", "TriangleNum"); break;
 			case "Reverse Squares": allCiphers[allCiphers.length] = new cipher(key, "English", 240, 225, 112, "Reverse", "SquareNum"); break;
+			case "Reverse Pentagonal": allCiphers[allCiphers.length] = new cipher(key, "Pentagonal", 245, 200, 130,"Reverse"); break;
+			case "Non-Primes": allCiphers[allCiphers.length] = new cipher(key, "NonPrime", 125, 66, 244,); break;
+			case "Reverse Non-Primes": allCiphers[allCiphers.length] = new cipher(key, "NonPrime", 125, 100, 244,"Reverse"); break;
 
 			case "Foolʹs Key": allCiphers[allCiphers.length] = new cipher(key, "FoolsKey", 46, 158, 214); break;
 			case "Zeroing Key": allCiphers[allCiphers.length] = new cipher(key, "ZeroingKey", 80, 183, 220); break;
@@ -1130,11 +1089,6 @@ function Build_Ciphers() {
 			case "Keypad": allCiphers[allCiphers.length] = new cipher(key, "Keypad", 255, 126, 255); break;
 			case "Isisian Codes": allCiphers[allCiphers.length] = new cipher(key, "Isisian Codes", 220,255,103); break;
 			case "Mirror": allCiphers[allCiphers.length] = new cipher(key, "Mirror", 210,220,240); break;
-
-			case "NonPrime Numbers": allCiphers[allCiphers.length] = new cipher(key, "NonPrime", 125, 66, 244,); break;
-			case "Reverse NonPrime Numbers": allCiphers[allCiphers.length] = new cipher(key, "NonPrime", 125, 100, 244,"Reverse"); break;
-			case "Pentagonal Numbers": allCiphers[allCiphers.length] = new cipher(key, "Pentagonal", 80, 150, 180,); break;
-			case "Reverse Pentagonal Numbers": allCiphers[allCiphers.length] = new cipher(key, "Pentagonal", 80, 160, 190,"Reverse"); break;
 						
 			case "Hebrew Reduction": allCiphers[allCiphers.length] = new cipher(key, "Hebrew G", 255, 189, 2, "FullReduction"); break;
 			case "Hebrew Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Hebrew G", 255, 209, 36); break;
@@ -1171,31 +1125,16 @@ function Build_Ciphers() {
 }
 
 function Set_Categories() {
-	catArr = ["English", "Reverse", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Other", "Foreign", "Russian", "Custom"]
+	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Other", "Foreign", "Russian", "Custom"]
 
-	cipherArray["English Ordinal"] = "English"
-	cipherArray["Full Reduction"] = "English"
-	cipherArray["Single Reduction"] = "English"
-	cipherArray["Full Reduction KV"] = "English"
-	cipherArray["Single Reduction KV"] = "English"
-	cipherArray["English Extended"] = "English"
-	cipherArray["Case Sensitive"] = "English"
-	cipherArray["Case Sensitive SwitchCase"] = "English"
-	cipherArray["Alternating Case Sensitive"] = "English"
-	cipherArray["Alt Case Sensitive SC"] = "English"
-	cipherArray["Satanic Gematria"] = "English"
-
-	cipherArray["Reverse Ordinal"] = "Reverse"
-	cipherArray["Reverse Full Reduction"] = "Reverse"
-	cipherArray["Reverse Single Reduction"] = "Reverse"
-	cipherArray["Reverse Full Reduction EP"] = "Reverse"
-	cipherArray["Reverse Single Reduction EP"] = "Reverse"
-	cipherArray["Reverse Extended"] = "Reverse"
-	cipherArray["Reverse Case Sensitive"] = "Reverse"
-	cipherArray["R Case Sensitive SC"] = "Reverse"
-	cipherArray["R Alt Case Sensitive"] = "Reverse"
-	cipherArray["R Alt Case Sensitive SC"] = "Reverse"
-	cipherArray["Reverse Satanic"] = "Reverse"
+	cipherArray["English Ordinal"] = "Modern English"
+	cipherArray["Full Reduction"] = "Modern English"
+	cipherArray["Reverse Ordinal"] = "Modern English"
+	cipherArray["Reverse Full Reduction"] = "Modern English"
+	cipherArray["English Extended"] = "Modern English"
+	cipherArray["Reverse Extended"] = "Modern English"
+	cipherArray["Extended Alternative"] = "Modern English"
+	cipherArray["R Extended Alternative"] = "Modern English"
 
 	cipherArray["Elizabethan Simple"] = "Elizabethan"
 	cipherArray["Elizabethan Reverse"] = "Elizabethan"
@@ -1228,7 +1167,6 @@ function Set_Categories() {
 	cipherArray["Alphanumeric Trigonal"] = "Alphanumeric"
 	cipherArray["Alphanumeric Squares"] = "Alphanumeric"
 	cipherArray["Alphanumeric Halves"] = "Alphanumeric"
-	cipherArray["Satanic Qabbala"] = "Alphanumeric"
 	cipherArray["Elizabethan Alphanumeric"] = "Alphanumeric"
 
 	cipherArray["Ordinal Starting at 2"] = "Ordinal Custom"
@@ -1243,23 +1181,32 @@ function Set_Categories() {
   	cipherArray["Master"] = "Ordinal Custom"
 	cipherArray["Master Builder"] = "Ordinal Custom"
 	cipherArray["Masonic"] = "Ordinal Custom"
+	cipherArray["Satanic Gematria"] = "Ordinal Custom"
 	cipherArray["Foundation"] = "Ordinal Custom"
     
+	cipherArray["Case Sensitive"] = "Case Sensitive"
+	cipherArray["Case Sensitive SwitchCase"] = "Case Sensitive"
+	cipherArray["Alternating Case Sensitive"] = "Case Sensitive"
+	cipherArray["Alt Case Sensitive SC"] = "Case Sensitive"
+	cipherArray["Reverse Case Sensitive"] = "Case Sensitive"
+	cipherArray["R Case Sensitive SC"] = "Case Sensitive"
+	cipherArray["R Alt Case Sensitive"] = "Case Sensitive"
+	cipherArray["R Alt Case Sensitive SC"] = "Case Sensitive"
+	cipherArray["Satanic Qabbala"] = "Case Sensitive"
+
 	cipherArray["Foolʹs Key"] = "Cypher Keys"
 	cipherArray["Zeroing Key"] = "Cypher Keys"
 
-	cipherArray["English Sumerian"] = "Mathematical"
-	cipherArray["Reverse Sumerian"] = "Mathematical"
 	cipherArray["Primes"] = "Mathematical"
 	cipherArray["Trigonal"] = "Mathematical"
 	cipherArray["Squares"] = "Mathematical"
+	cipherArray["Pentagonal"] = "Mathematical"
 	cipherArray["Reverse Primes"] = "Mathematical"
 	cipherArray["Reverse Trigonal"] = "Mathematical"
 	cipherArray["Reverse Squares"] = "Mathematical"
-	cipherArray["NonPrime Numbers"] = "Mathematical"
-	cipherArray["Reverse NonPrime Numbers"] = "Mathematical"
-	cipherArray["Pentagonal Numbers"] = "Mathematical"
-	cipherArray["Reverse Pentagonal Numbers"] = "Mathematical"
+	cipherArray["Reverse Pentagonal"] = "Mathematical"
+	cipherArray["Non-Primes"] = "Mathematical"
+	cipherArray["Reverse Non-Primes"] = "Mathematical"
 
 	cipherArray["Elizabethan 360"] = "Divisors"
 	cipherArray["Hebrew 360"] = "Divisors"
