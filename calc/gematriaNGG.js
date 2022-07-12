@@ -1000,7 +1000,7 @@ function Build_Ciphers() {
 }
 
 function Set_Categories() {
-	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Foreign", "Russian", "Custom"]
+	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Classical", "Russian", "Custom"]
 
 	cipherArray["English Ordinal"] = "Modern English"
 	cipherArray["Full Reduction"] = "Modern English"
@@ -1084,19 +1084,19 @@ function Set_Categories() {
 	cipherArray["Fibonacci Cipher"] = "Fibonacci"
 	cipherArray["Fibonacci Sequence"] = "Fibonacci"
 	
-	cipherArray["Hebrew Gematria"] = "Foreign"
-	cipherArray["Hebrew Ordinal"] = "Foreign"
-	cipherArray["Hebrew Reduction"] = "Foreign"
-	cipherArray["Hebrew Soffit"] = "Foreign"
+	cipherArray["Hebrew Gematria"] = "Classical"
+	cipherArray["Hebrew Ordinal"] = "Classical"
+	cipherArray["Hebrew Reduction"] = "Classical"
+	cipherArray["Hebrew Soffit"] = "Classical"
 
-	cipherArray["Greek Isopsephy"] = "Foreign"
-	cipherArray["Greek Ordinal"] = "Foreign"
-	cipherArray["Greek Reduction"] = "Foreign"
-	cipherArray["Greek Ordinal 24"] = "Foreign"
+	cipherArray["Greek Isopsephy"] = "Classical"
+	cipherArray["Greek Ordinal"] = "Classical"
+	cipherArray["Greek Reduction"] = "Classical"
+	cipherArray["Greek Ordinal 24"] = "Classical"
 	
-	cipherArray["Arabic"] = "Foreign"
-	cipherArray["Arabic Ordinal"] = "Foreign"
-	cipherArray["Arabic Reduction"] = "Foreign"
+	cipherArray["Arabic"] = "Classical"
+	cipherArray["Arabic Ordinal"] = "Classical"
+	cipherArray["Arabic Reduction"] = "Classical"
 
 	cipherArray["RU Ordinal"] = "Russian"
 	cipherArray["RU Full Reduction"] = "Russian"
