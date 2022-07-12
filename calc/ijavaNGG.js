@@ -1,5 +1,5 @@
 var ciphers_per_row = 4; ChartMax = 36
-var cOption = "English"
+var cOption = "Modern English"
 var breakCipher
 var pixelcount = 0; breakArr = []; pArr= []; mArr = []
 var opt_Reduce = false; opt_Quotes = true; opt_Summ = true; opt_Breakdown = "Compact"; opt_LetterCount = true
