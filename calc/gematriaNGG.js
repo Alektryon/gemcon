@@ -939,13 +939,13 @@ function Build_Ciphers() {
 			case "Foundation": allCiphers[allCiphers.length] = new cipher(key, "Foundation", 207,80,155); break;   
 
 			case "Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "CS"); break;
-			case "Case Sensitive SwitchCase": allCiphers[allCiphers.length] = new cipher(key, "English", 152, 223, 98, "CSSwitchCase"); break;
 			case "Alternating Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "AltCS"); break;
-			case "Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 132, 203, 128, "AltCSSwitchCase"); break;	
-			case "Reverse Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "Reverse", "CS"); break;
-			case "R Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 152, 223, 98, "Reverse", "CSSwitchCase"); break;
-			case "R Alt Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "Reverse", "AltCS"); break;
-			case "R Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 132, 203, 128, "Reverse", "AltCSSwitchCase"); break;
+			case "Reverse Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 163, 255, 88, "Reverse", "CS"); break;
+			case "R Alt Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "English", 111, 193, 121, "Reverse", "AltCS"); break;
+			case "Case Sensitive SwitchCase": allCiphers[allCiphers.length] = new cipher(key, "English", 150, 244, 77, "CSSwitchCase"); break;
+			case "Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 93, 187, 88, "AltCSSwitchCase"); break;	
+			case "R Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 163, 255, 88, "Reverse", "CSSwitchCase"); break;
+			case "R Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 111, 193, 121, "Reverse", "AltCSSwitchCase"); break;
 			case "Satanic Qabbala": allCiphers[allCiphers.length] = new cipher(key, "SatanAQ", 223,126,92); break;
 
 			case "Primes": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 204, 111, "PrimeNum"); break;
@@ -1052,12 +1052,12 @@ function Set_Categories() {
 	cipherArray["Foundation"] = "Ordinal Custom"
     
 	cipherArray["Case Sensitive"] = "Case Sensitive"
-	cipherArray["Case Sensitive SwitchCase"] = "Case Sensitive"
 	cipherArray["Alternating Case Sensitive"] = "Case Sensitive"
-	cipherArray["Alt Case Sensitive SC"] = "Case Sensitive"
 	cipherArray["Reverse Case Sensitive"] = "Case Sensitive"
-	cipherArray["R Case Sensitive SC"] = "Case Sensitive"
 	cipherArray["R Alt Case Sensitive"] = "Case Sensitive"
+	cipherArray["Case Sensitive SwitchCase"] = "Case Sensitive"
+	cipherArray["Alt Case Sensitive SC"] = "Case Sensitive"
+	cipherArray["R Case Sensitive SC"] = "Case Sensitive"
 	cipherArray["R Alt Case Sensitive SC"] = "Case Sensitive"
 	cipherArray["Satanic Qabbala"] = "Case Sensitive"
 
