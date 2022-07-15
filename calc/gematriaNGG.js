@@ -1,6 +1,6 @@
 var catArr = []; gemArr = []
 var cipherArray = [];
-var openCiphers = ["English Ordinal", "Alphanumeric Qabbala", "Satanic Gematria"]
+var openCiphers = ["English Extended", "English Ordinal", "Full Reduction", "Alphanumeric Qabbala"]
 var ciphersOn = []; allCiphers = []; sHistory = []
 var opt_NumCalculation = "Reduced"
 var primeArr = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 
@@ -888,12 +888,12 @@ function Build_Ciphers() {
 
 	for (key in cipherArray) {
 		switch (key) {
-			case "English Ordinal": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0); break;
-			case "Reverse Ordinal": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "Reverse"); break;
-			case "Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 88, 125, 254, "FullReduction"); break;
-			case "Reverse Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 226, 226, "Reverse", "FullReduction"); break;
 			case "English Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Extend"); break;
+			case "English Ordinal": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0); break;
+			case "Full Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 88, 125, 254, "FullReduction"); break;
 			case "Reverse Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "Reverse", "Extend"); break;
+			case "Reverse Ordinal": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "Reverse"); break;
+			case "Reverse Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 226, 226, "Reverse", "FullReduction"); break;
 			case "Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 233, 182, 53); break;
 			case "R Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 238, 200, 104, "Reverse"); break;
 
@@ -1002,12 +1002,12 @@ function Build_Ciphers() {
 function Set_Categories() {
 	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Classical", "Russian", "Custom"]
 
+	cipherArray["English Extended"] = "Modern English"
 	cipherArray["English Ordinal"] = "Modern English"
 	cipherArray["Full Reduction"] = "Modern English"
-	cipherArray["Reverse Ordinal"] = "Modern English"
-	cipherArray["Reverse Full Reduction"] = "Modern English"
-	cipherArray["English Extended"] = "Modern English"
 	cipherArray["Reverse Extended"] = "Modern English"
+	cipherArray["Reverse Ordinal"] = "Modern English"
+	cipherArray["Reverse Reduction"] = "Modern English"
 	cipherArray["Extended Alternative"] = "Modern English"
 	cipherArray["R Extended Alternative"] = "Modern English"
 
@@ -1173,7 +1173,7 @@ function Add_AllCiphers(impBool = false) {
 }
 function Add_BaseCiphers(impBool = false) {
 	var x, q, cN, z
-	var baseCiphers = ["English Ordinal", "Alphanumeric Qabbala", "Satanic Gematria"]
+	var baseCiphers = ["English Extended", "English Ordinal", "Full Reduction", "Alphanumeric Qabbala"]
 
 	openCiphers = []
 	for (z = 0; z < allCiphers.length; z++) {
