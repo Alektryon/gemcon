@@ -1013,7 +1013,7 @@ function Build_Ciphers() {
 }
 
 function Set_Categories() {
-	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Divisors", "Fibonacci", "Classical", "Russian", "Custom"]
+	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Fibonacci", "Classical", "Russian", "Custom"]
 
 	cipherArray["English Standard"] = "Modern English"
 	cipherArray["English Ordinal"] = "Modern English"
@@ -1032,6 +1032,8 @@ function Set_Categories() {
 	cipherArray["Elizabethan R Reduction"] = "Elizabethan"
 	cipherArray["Kaye Cipher"] = "Elizabethan"
 	cipherArray["Modern Kaye"] = "Elizabethan"
+	cipherArray["Elizabethan Alphanumeric"] = "Elizabethan"
+	cipherArray["Elizabethan 360"] = "Elizabethan"
 
 	cipherArray["Illuminati Novice"] = "Illuminati"
 	cipherArray["Illuminati Reverse"] = "Illuminati"
@@ -1056,8 +1058,6 @@ function Set_Categories() {
 	cipherArray["Alphanumeric Primes"] = "Alphanumeric"
 	cipherArray["Alphanumeric Trigonal"] = "Alphanumeric"
 	cipherArray["Alphanumeric Squares"] = "Alphanumeric"
-	cipherArray["Alphanumeric Halves"] = "Alphanumeric"
-	cipherArray["Elizabethan Alphanumeric"] = "Alphanumeric"
 
 	cipherArray["Ordinal Starting at 10"] = "Ordinal Custom"
   	cipherArray["Master"] = "Ordinal Custom"
@@ -1078,6 +1078,7 @@ function Set_Categories() {
 
 	cipherArray["Foolʹs Key"] = "Cypher Keys"
 	cipherArray["Zeroing Key"] = "Cypher Keys"
+	cipherArray["Alphanumeric Halves"] = "Cypher Keys"
 
 	cipherArray["Primes"] = "Mathematical"
 	cipherArray["Trigonal"] = "Mathematical"
@@ -1089,12 +1090,6 @@ function Set_Categories() {
 	cipherArray["Reverse Pentagonal"] = "Mathematical"
 	cipherArray["Non-Primes"] = "Mathematical"
 	cipherArray["Reverse Non-Primes"] = "Mathematical"
-
-	cipherArray["Elizabethan 360"] = "Divisors"
-	cipherArray["Hebrew 360"] = "Divisors"
-	cipherArray["Hebrew 900"] = "Divisors"
-	cipherArray["Greek 360"] = "Divisors"
-	cipherArray["Greek 900"] = "Divisors"
 
 	cipherArray["Fibonacci Cipher"] = "Fibonacci"
 	cipherArray["Fibonacci Sequence"] = "Fibonacci"
@@ -1112,6 +1107,11 @@ function Set_Categories() {
 	cipherArray["Arabic"] = "Classical"
 	cipherArray["Arabic Ordinal"] = "Classical"
 	cipherArray["Arabic Reduction"] = "Classical"
+
+	cipherArray["Hebrew 360"] = "Classical"
+	cipherArray["Hebrew 900"] = "Classical"
+	cipherArray["Greek 360"] = "Classical"
+	cipherArray["Greek 900"] = "Classical"
 
 	cipherArray["RU Ordinal"] = "Russian"
 	cipherArray["RU Full Reduction"] = "Russian"
