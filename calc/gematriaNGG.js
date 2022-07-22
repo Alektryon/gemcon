@@ -1099,19 +1099,20 @@ function Set_Categories() {
 	cipherArray["Hebrew Reduction"] = "Classical"
 	cipherArray["Hebrew Soffit"] = "Classical"
 
+	cipherArray["Hebrew 360"] = "Classical"
+	cipherArray["Hebrew 900"] = "Classical"
+
 	cipherArray["Greek Isopsephy"] = "Classical"
 	cipherArray["Greek Ordinal"] = "Classical"
 	cipherArray["Greek Reduction"] = "Classical"
 	cipherArray["Greek Ordinal 24"] = "Classical"
 	
+	cipherArray["Greek 360"] = "Classical"
+	cipherArray["Greek 900"] = "Classical"
+
 	cipherArray["Arabic"] = "Classical"
 	cipherArray["Arabic Ordinal"] = "Classical"
 	cipherArray["Arabic Reduction"] = "Classical"
-
-	cipherArray["Hebrew 360"] = "Classical"
-	cipherArray["Hebrew 900"] = "Classical"
-	cipherArray["Greek 360"] = "Classical"
-	cipherArray["Greek 900"] = "Classical"
 
 	cipherArray["RU Ordinal"] = "Russian"
 	cipherArray["RU Full Reduction"] = "Russian"
