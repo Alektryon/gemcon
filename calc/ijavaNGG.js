@@ -715,9 +715,9 @@ function Build_CharTable(impCipher) {
 	rStr += '<tr>'
 
 	rStr += '<td colspan="' + impCipher.cArr.length + '">'
-	rStr += '<button id="MoveUp" class="CipherButton" onclick="Slide_Cipher(' + "'up'" + ')" value="Move Up" style="float: left"><B>Move Up</B></button>'
+/*	rStr += '<button id="MoveUp" class="CipherButton" onclick="Slide_Cipher(' + "'up'" + ')" value="Move Up" style="float: left"><B>Move Up</B></button>' */
 	rStr += '<B><font style="font-size: 150%; color: RGB(' + impCipher.RGB.join() +')">' + impCipher.Nickname + '</font></B>'
-	rStr += '<button id="MoveDown" class="CipherButton" onclick="Slide_Cipher(' + "'down'" + ')" value="Move Down" style="float: right"><B>Move Down</B></button></B>'
+/*	rStr += '<button id="MoveDown" class="CipherButton" onclick="Slide_Cipher(' + "'down'" + ')" value="Move Down" style="float: right"><B>Move Down</B></button></B>' */
 	rStr += '</td></tr><tr>'
 
 	if (impCipher.cArr.length < 30 && impCipher.vArr.reduce(getSum) < 200) {
