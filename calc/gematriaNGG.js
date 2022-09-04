@@ -1035,7 +1035,7 @@ function Build_Ciphers() {
 }
 
 function Set_Categories() {
-	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin-Italic", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Fibonacci", "Classical", "Russian", "Custom"]
+	catArr = ["Modern English", "Elizabethan", "Illuminati", "Latin", "Thelemic", "Alphanumeric", "Ordinal Custom", "Case Sensitive", "Cypher Keys", "Mathematical", "Fibonacci", "Classical", "Russian", "Custom"]
 
 	cipherArray["English Standard"] = "Modern English"
 	cipherArray["English Ordinal"] = "Modern English"
@@ -1060,14 +1060,14 @@ function Set_Categories() {
 	cipherArray["Illuminati Novice"] = "Illuminati"
 	cipherArray["Illuminati Reverse"] = "Illuminati"
 
-	cipherArray["Agrippa Key"] = "Latin-Italic"
-	cipherArray["Agrippa Ordinal"] = "Latin-Italic"	
-	cipherArray["Agrippa Reduction"] = "Latin-Italic"
-	cipherArray["Beatus of Liebana"] = "Latin-Italic"
-	cipherArray["Beatus Ordinal"] = "Latin-Italic"
-	cipherArray["Beatus Reduction"] = "Latin-Italic"
-	cipherArray["Cabala Simplex"] = "Latin-Italic"
-	cipherArray["Roman Numerals"] = "Latin-Italic"
+	cipherArray["Agrippa Key"] = "Latin"
+	cipherArray["Agrippa Ordinal"] = "Latin"
+	cipherArray["Agrippa Reduction"] = "Latin"
+	cipherArray["Beatus of Liebana"] = "Latin"
+	cipherArray["Beatus Ordinal"] = "Latin"
+	cipherArray["Beatus Reduction"] = "Latin"
+	cipherArray["Cabala Simplex"] = "Latin"
+	cipherArray["Roman Numerals"] = "Latin"
 	
 	cipherArray["English Qaballa"] = "Thelemic"
 	cipherArray["Cipher X"] = "Thelemic"
