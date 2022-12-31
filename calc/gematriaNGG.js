@@ -959,12 +959,12 @@ function Build_Ciphers() {
 			case "Trigrammaton Qabalah": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 93, 73, "LCH"); break;
 			case "Abrahadabra Cipher": allCiphers[allCiphers.length] = new cipher(key, "Abrahadabra", 222,172,0); break;   
 
-			case "Alphanumeric Qabbala": allCiphers[allCiphers.length] = new cipher(key, "AQ", 190, 190, 126); break;   
-			case "Alphanumeric Primes": allCiphers[allCiphers.length] = new cipher(key, "AQprimes", 115, 177, 196); break;   
-			case "Alphanumeric Trigonal": allCiphers[allCiphers.length] = new cipher(key, "AQtrigonal", 200, 81, 81); break;   
-			case "Alphanumeric Squares": allCiphers[allCiphers.length] = new cipher(key, "AQsquares", 111, 174, 116); break;   
+			case "Alphanumeric Qabbala": allCiphers[allCiphers.length] = new cipher(key, "AQ", 191,195,127); break;   
+			case "Alphanumeric Primes": allCiphers[allCiphers.length] = new cipher(key, "AQprimes", 223, 192, 151); break;   
+			case "Alphanumeric Trigonal": allCiphers[allCiphers.length] = new cipher(key, "AQtrigonal", 155, 182, 142); break;   
+			case "Alphanumeric Squares": allCiphers[allCiphers.length] = new cipher(key, "AQsquares", 135, 174, 171); break;   
 			case "Alphanumeric Satanic": allCiphers[allCiphers.length] = new cipher(key, "SatanAQ", 224,162,92); break;
-			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 126, 207, 241); break;
+			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 169, 168, 122); break;
 
 			case "Ordinal Starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 10", 191, 195, 127); break;
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
