@@ -982,7 +982,7 @@ function Build_Ciphers() {
 			case "R Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 163, 255, 88, "Reverse", "CSSwitchCase"); break;
 			case "R Alt Case Sensitive SC": allCiphers[allCiphers.length] = new cipher(key, "English", 111, 193, 121, "Reverse", "AltCSSwitchCase"); break;
 
-			case "Foolʹs Key": allCiphers[allCiphers.length] = new cipher(key, "FoolsKey", 46, 158, 214); break;
+			case "Mirroring Key": allCiphers[allCiphers.length] = new cipher(key, "FoolsKey", 46, 158, 214); break;
 			case "Zeroing Key": allCiphers[allCiphers.length] = new cipher(key, "ZeroingKey", 80, 183, 220); break;
 				
 			case "Trigonal": allCiphers[allCiphers.length] = new cipher(key, "English", 231, 180, 60, "TriangleNum"); break;
@@ -1098,7 +1098,7 @@ function Set_Categories() {
 	cipherArray["R Case Sensitive SC"] = "Case Sensitive"
 	cipherArray["R Alt Case Sensitive SC"] = "Case Sensitive"
 
-	cipherArray["Foolʹs Key"] = "Cypher Keys"
+	cipherArray["Mirroring Key"] = "Cypher Keys"
 	cipherArray["Zeroing Key"] = "Cypher Keys"
 
 	cipherArray["Trigonal"] = "Mathematical"
