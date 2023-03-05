@@ -174,7 +174,7 @@ class cipher {
 				this.vArr = [1,10,27,52,85,126,175,232,297,370,451,540,637,742,855,976,1105,1242,1387,1540,1701,1870,2047,2232,2425,2626]
 				this.vArr2 = [1,10,27,52,85,126,175,232,297,370,451,540,637,742,855,976,1105,1242,1387,1540,1701,1870,2047,2232,2425,2626]
 				break;
-			case "Ordinal Starting at 10":
+			case "Ordinal starting at 10":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
 					this.cArr2[y] = (y + 65)
@@ -985,7 +985,7 @@ function Build_Ciphers() {
 			case "Alphanumeric Satanic": allCiphers[allCiphers.length] = new cipher(key, "AQsatanic", 224,162,92); break;
 			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 169, 168, 122); break;
 
-			case "Ordinal Starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 10", 190, 190, 126); break;
+			case "Ordinal starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal starting at 10", 190, 190, 126); break;
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
 			case "Master Builder": allCiphers[allCiphers.length] = new cipher(key, "Master Builder", 0,202,191); break;   
 		 	case "Masonic": allCiphers[allCiphers.length] = new cipher(key, "Masonic", 255,179,87); break;   
@@ -1101,7 +1101,7 @@ function Set_Categories() {
 	cipherArray["Alphanumeric Satanic"] = "Alphanumeric"
 	cipherArray["Alphanumeric Halves"] = "Alphanumeric"
 
-	cipherArray["Ordinal Starting at 10"] = "Ordinal Custom"
+	cipherArray["Ordinal starting at 10"] = "Ordinal Custom"
   	cipherArray["Master"] = "Ordinal Custom"
 	cipherArray["Master Builder"] = "Ordinal Custom"
 	cipherArray["Masonic"] = "Ordinal Custom"
