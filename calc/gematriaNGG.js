@@ -100,7 +100,23 @@ class cipher {
 				this.cArr2 = [65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90]
 				this.vArr = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
 				this.vArr2 = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
-                }
+				}
+				break;
+			case "PrimeQ":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [97,101,105,111,117,98,99,100,102,103,104,106,107,108,109,110,112,113,114,115,116,118,119,120,121,122]
+				this.cArr2 = [65,69,73,79,85,66,67,68,70,71,72,74,75,76,77,78,80,81,82,83,84,86,87,88,89,90]
+				this.vArr = [1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
+				this.vArr2 = [1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
+				}
+				break;
+			case "WilliamGGray":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [97,101,105,111,117,98,99,100,102,103,104,106,107,108,109,110,112,113,114,115,116,118,119,120,121,122]
+				this.cArr2 = [65,69,73,79,85,66,67,68,70,71,72,74,75,76,77,78,80,81,82,83,84,86,87,88,89,90]
+				this.vArr = [0,0,0,0,0,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+				this.vArr2 = [0,0,0,0,0,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+				}
 				break;
 			case "Fibonacci Cipher":
 				for (y = 0; y < 26; y++) {
@@ -228,7 +244,7 @@ class cipher {
 				this.vArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61]
 				}
 				break;
-			case "Abrahadabra":
+			case "ElevenQ":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
 					this.cArr2[y] = (y + 65)
@@ -976,7 +992,9 @@ function Build_Ciphers() {
 			case "English Qaballa": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 64, 0, "ALW"); break;
 			case "Cipher X": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 88, 0, "KFW"); break;
 			case "Trigrammaton Qabalah": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 93, 73, "LCH"); break;
-			case "Abrahadabra Cipher": allCiphers[allCiphers.length] = new cipher(key, "Abrahadabra", 222,172,0); break;   
+			case "Elevenfold Qabalah": allCiphers[allCiphers.length] = new cipher(key, "ElevenQ", 222,172,0); break;   
+			case "Prime Qabalah": allCiphers[allCiphers.length] = new cipher(key, "PrimeQ", 179,201,156); break;   
+			case "William G. Gray": allCiphers[allCiphers.length] = new cipher(key, "WilliamGGray", 82,224,153); break;   
 
 			case "Alphanumeric Qabbala": allCiphers[allCiphers.length] = new cipher(key, "AQ", 190,190,126); break;   
 			case "Alphanumeric Primes": allCiphers[allCiphers.length] = new cipher(key, "AQprimes", 223, 192, 151); break;   
@@ -1092,7 +1110,9 @@ function Set_Categories() {
 	cipherArray["English Qaballa"] = "Thelemic"
 	cipherArray["Cipher X"] = "Thelemic"
 	cipherArray["Trigrammaton Qabalah"] = "Thelemic"
-   	cipherArray["Abrahadabra Cipher"] = "Thelemic"
+	cipherArray["Elevenfold Qabalah"] = "Thelemic"
+	cipherArray["Prime Qabalah"] = "Thelemic"
+	cipherArray["William G. Gray"] = "Thelemic"
 
 	cipherArray["Alphanumeric Qabbala"] = "Alphanumeric"
 	cipherArray["Alphanumeric Primes"] = "Alphanumeric"
@@ -1138,15 +1158,15 @@ function Set_Categories() {
 	cipherArray["Hebrew Ordinal"] = "Classical"
 	cipherArray["Hebrew Reduction"] = "Classical"
 	cipherArray["Hebrew Soffit"] = "Classical"
-	cipherArray["Hebrew 360"] = "Classical"
-	cipherArray["Hebrew 900"] = "Classical"
+//	cipherArray["Hebrew 360"] = "Classical"
+//	cipherArray["Hebrew 900"] = "Classical"
 
 	cipherArray["Greek Isopsephy"] = "Classical"
 	cipherArray["Greek Ordinal"] = "Classical"
 	cipherArray["Greek Reduction"] = "Classical"
 	cipherArray["Greek Ordinal 24"] = "Classical"	
-	cipherArray["Greek 900"] = "Classical"
-	cipherArray["Greek 360"] = "Classical"
+//	cipherArray["Greek 900"] = "Classical"
+//	cipherArray["Greek 360"] = "Classical"
 
 	cipherArray["Arabic"] = "Classical"
 	cipherArray["Arabic Ordinal"] = "Classical"
