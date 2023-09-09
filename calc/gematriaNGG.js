@@ -244,6 +244,14 @@ class cipher {
 				this.vArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61]
 				}
 				break;
+			case "AQ1260":
+				for (y = 0; y < 36; y++) {
+				this.cArr = [48,49,50,51,52,53,54,55,56,57,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122]
+				this.cArr2 = [48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90]
+				this.vArr = [1,2,3,4,5,6,7,9,10,12,14,15,18,20,21,28,30,35,36,42,45,60,63,70,84,90,105,126,140,180,210,252,315,420,630,1260]
+				this.vArr2 = [1,2,3,4,5,6,7,9,10,12,14,15,18,20,21,28,30,35,36,42,45,60,63,70,84,90,105,126,140,180,210,252,315,420,630,1260]
+				}
+				break;
 			case "ElevenQ":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
@@ -1002,6 +1010,7 @@ function Build_Ciphers() {
 			case "Alphanumeric Squares": allCiphers[allCiphers.length] = new cipher(key, "AQsquares", 135, 174, 171); break;   
 			case "Alphanumeric Satanic": allCiphers[allCiphers.length] = new cipher(key, "AQsatanic", 224,162,92); break;
 			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 169, 168, 122); break;
+			case "Alphanumeric 1260": allCiphers[allCiphers.length] = new cipher(key, "AQ1260", 156, 201, 201); break;
 
 			case "Ordinal starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal starting at 10", 190, 190, 126); break;
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
@@ -1120,6 +1129,7 @@ function Set_Categories() {
 	cipherArray["Alphanumeric Squares"] = "Alphanumeric"
 	cipherArray["Alphanumeric Satanic"] = "Alphanumeric"
 	cipherArray["Alphanumeric Halves"] = "Alphanumeric"
+	cipherArray["Alphanumeric 1260"] = "Alphanumeric"
 
 	cipherArray["Ordinal starting at 10"] = "Ordinal Custom"
   	cipherArray["Master"] = "Ordinal Custom"
