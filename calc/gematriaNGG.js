@@ -1008,9 +1008,9 @@ function Build_Ciphers() {
 			case "Alphanumeric Primes": allCiphers[allCiphers.length] = new cipher(key, "AQprimes", 223, 192, 151); break;   
 			case "Alphanumeric Trigonal": allCiphers[allCiphers.length] = new cipher(key, "AQtrigonal", 155, 182, 142); break;   
 			case "Alphanumeric Squares": allCiphers[allCiphers.length] = new cipher(key, "AQsquares", 135, 174, 171); break;   
-			case "Alphanumeric Satanic": allCiphers[allCiphers.length] = new cipher(key, "AQsatanic", 224,162,92); break;
+			case "Alphanumeric Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "AQsatanic", 224,162,92); break;
 			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 169, 168, 122); break;
-			case "Alphanumeric 1260": allCiphers[allCiphers.length] = new cipher(key, "AQ1260", 156, 201, 201); break;
+			case "Synx": allCiphers[allCiphers.length] = new cipher(key, "AQ1260", 130, 206, 206); break;
 
 			case "Ordinal starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal starting at 10", 190, 190, 126); break;
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
@@ -1127,9 +1127,9 @@ function Set_Categories() {
 	cipherArray["Alphanumeric Primes"] = "Alphanumeric"
 	cipherArray["Alphanumeric Trigonal"] = "Alphanumeric"
 	cipherArray["Alphanumeric Squares"] = "Alphanumeric"
-	cipherArray["Alphanumeric Satanic"] = "Alphanumeric"
+	cipherArray["Alphanumeric Case Sensitive"] = "Alphanumeric"
 	cipherArray["Alphanumeric Halves"] = "Alphanumeric"
-	cipherArray["Alphanumeric 1260"] = "Alphanumeric"
+	cipherArray["Synx"] = "Alphanumeric"
 
 	cipherArray["Ordinal starting at 10"] = "Ordinal Custom"
   	cipherArray["Master"] = "Ordinal Custom"
