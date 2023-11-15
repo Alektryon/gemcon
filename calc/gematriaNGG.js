@@ -102,6 +102,14 @@ class cipher {
 				this.vArr2 = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
 				}
 				break;
+			case "Toavotea":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [97,105,113,121,102,110,118,100,108,116,98,106,114,122,103,111,119,101,109,117,99,107,115,104,112,120]
+				this.cArr2 = [65,73,81,89,70,78,86,68,76,84,66,74,82,90,71,79,87,69,77,85,67,75,83,72,80,88]
+				this.vArr = [1,4,6,8,10,12,14,16,18,20,22,24,26,0,2,3,5,7,11,13,17,19,23,29,31,28]
+				this.vArr2 = [1,4,6,8,10,12,14,16,18,20,22,24,26,0,2,3,5,7,11,13,17,19,23,29,31,28]
+				}
+				break;
 			case "PrimeQ":
 				for (y = 0; y < 26; y++) {
 				this.cArr = [97,101,105,111,117,98,99,100,102,103,104,106,107,108,109,110,112,113,114,115,116,118,119,120,121,122]
@@ -1001,6 +1009,7 @@ function Build_Ciphers() {
 			case "Cipher X": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 88, 0, "KFW"); break;
 			case "Trigrammaton Qabalah": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 93, 73, "LCH"); break;
 			case "Elevenfold Qabalah": allCiphers[allCiphers.length] = new cipher(key, "ElevenQ", 222,172,0); break;   
+			case "Toavotea Key": allCiphers[allCiphers.length] = new cipher(key, "Toavotea", 217,179,140); break;
 			case "Prime Qabalah": allCiphers[allCiphers.length] = new cipher(key, "PrimeQ", 179,201,156); break;   
 			case "William G. Gray": allCiphers[allCiphers.length] = new cipher(key, "WilliamGGray", 82,224,153); break;   
 
@@ -1119,6 +1128,7 @@ function Set_Categories() {
 	cipherArray["English Qaballa"] = "Thelemic"
 	cipherArray["Cipher X"] = "Thelemic"
 	cipherArray["Trigrammaton Qabalah"] = "Thelemic"
+	cipherArray["Toavotea Key"] = "Thelemic"
 	cipherArray["Elevenfold Qabalah"] = "Thelemic"
 	cipherArray["Prime Qabalah"] = "Thelemic"
 	cipherArray["William G. Gray"] = "Thelemic"
