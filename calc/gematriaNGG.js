@@ -1019,7 +1019,7 @@ function Build_Ciphers() {
 			case "Alphanumeric Squares": allCiphers[allCiphers.length] = new cipher(key, "AQsquares", 135, 174, 171); break;   
 			case "Alphanumeric Case Sensitive": allCiphers[allCiphers.length] = new cipher(key, "AQsatanic", 224,162,92); break;
 			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 169, 168, 122); break;
-			case "Synx": allCiphers[allCiphers.length] = new cipher(key, "AQ1260", 130, 206, 206); break;
+			case "Synx": allCiphers[allCiphers.length] = new cipher(key, "AQ1260", 207, 180, 233); break;
 
 			case "Ordinal starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal starting at 10", 190, 190, 126); break;
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
