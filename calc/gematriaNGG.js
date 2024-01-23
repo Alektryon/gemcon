@@ -198,6 +198,14 @@ class cipher {
 				this.vArr = [1,10,27,52,85,126,175,232,297,370,451,540,637,742,855,976,1105,1242,1387,1540,1701,1870,2047,2232,2425,2626]
 				this.vArr2 = [1,10,27,52,85,126,175,232,297,370,451,540,637,742,855,976,1105,1242,1387,1540,1701,1870,2047,2232,2425,2626]
 				break;
+			case "Angelic Gematria":
+				for (y = 0; y < 26; y++) {
+					this.cArr[y] = (y + 97)
+					this.cArr2[y] = (y + 65)
+				}
+				this.vArr = [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+				this.vArr2 = [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+				break;
 			case "Ordinal starting at 10":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
@@ -1021,6 +1029,7 @@ function Build_Ciphers() {
 			case "Alphanumeric Halves": allCiphers[allCiphers.length] = new cipher(key, "0Z", 169, 168, 122); break;
 			case "Synx": allCiphers[allCiphers.length] = new cipher(key, "AQ1260", 207, 180, 233); break;
 
+			case "Angelic Gematria": allCiphers[allCiphers.length] = new cipher(key, "Angelic Gematria", 224, 176, 255); break;
 			case "Ordinal starting at 10": allCiphers[allCiphers.length] = new cipher(key, "Ordinal starting at 10", 190, 190, 126); break;
 			case "Master": allCiphers[allCiphers.length] = new cipher(key, "Master", 102,139,235); break;   
 			case "Master Builder": allCiphers[allCiphers.length] = new cipher(key, "Master Builder", 0,202,191); break;   
@@ -1141,6 +1150,7 @@ function Set_Categories() {
 	cipherArray["Alphanumeric Halves"] = "Alphanumeric"
 	cipherArray["Synx"] = "Alphanumeric"
 
+	cipherArray["Angelic Gematria"] = "Ordinal Custom"
 	cipherArray["Ordinal starting at 10"] = "Ordinal Custom"
   	cipherArray["Master"] = "Ordinal Custom"
 	cipherArray["Master Builder"] = "Ordinal Custom"
